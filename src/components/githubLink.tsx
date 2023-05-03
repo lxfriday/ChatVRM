@@ -5,7 +5,7 @@ export const GitHubLink = () => {
     <div className="absolute right-0 z-10 m-24">
       <a
         draggable={false}
-        href="https://github.com/pixiv/ChatVRM"
+        href="https://github.com/lxfriday/ChatVRM-cn"
         rel="noopener noreferrer"
         target="_blank"
       >
