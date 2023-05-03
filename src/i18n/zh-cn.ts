@@ -72,6 +72,7 @@ const cn = {
   SettingsAdjustmentOfVoicePresetsBtn2: "元气满满",
   SettingsAdjustmentOfVoicePresetsBtn3: "酷酷的",
   SettingsAdjustmentOfVoicePresetsBtn4: "成熟风",
+  SettingsConversationLog: "历史对话",
 };
 
 export default cn;

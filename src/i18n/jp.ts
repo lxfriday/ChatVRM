@@ -79,6 +79,8 @@ const jp = {
   SettingsAdjustmentOfVoicePresetsBtn2: "元気",
   SettingsAdjustmentOfVoicePresetsBtn3: "かっこいい",
   SettingsAdjustmentOfVoicePresetsBtn4: "渋い",
+  SettingsConversationLog: "会話履歴",
+
 };
 
 export default jp;

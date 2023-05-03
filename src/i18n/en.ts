@@ -74,6 +74,7 @@ Please respond with only one appropriate conversation. Please do not use polite 
   SettingsAdjustmentOfVoicePresetsBtn2: "Energetic",
   SettingsAdjustmentOfVoicePresetsBtn3: "Cool",
   SettingsAdjustmentOfVoicePresetsBtn4: "Mature",
+  SettingsConversationLog: "Conversation Log",
 };
 
 export default en;
