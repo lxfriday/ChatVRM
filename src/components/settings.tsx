@@ -132,20 +132,26 @@ export const Settings = ({
                 <img
                   src={buildUrl("/demo-A.png")}
                   alt="demo-A"
-                  className="mx-[1%] w-[30%] cursor-pointer rounded-16  transition-all hover:translate-y-[-8px]"
+                  className="mx-[1%] w-[22%] cursor-pointer rounded-16  transition-all hover:translate-y-[-8px]"
                   onClick={() => setVRM("/AvatarSample_A.vrm")}
                 />
                 <img
                   src={buildUrl("/demo-B.png")}
-                  alt="demo-A"
-                  className="mx-[1%] w-[30%] cursor-pointer rounded-16  transition-all hover:translate-y-[-8px]"
+                  alt="demo-B"
+                  className="mx-[1%] w-[22%] cursor-pointer rounded-16  transition-all hover:translate-y-[-8px]"
                   onClick={() => setVRM("/AvatarSample_B.vrm")}
                 />
                 <img
                   src={buildUrl("/demo-C.png")}
-                  alt="demo-A"
-                  className="mx-[1%] w-[30%] cursor-pointer rounded-16  transition-all hover:translate-y-[-8px]"
+                  alt="demo-C"
+                  className="mx-[1%] w-[22%] cursor-pointer rounded-16  transition-all hover:translate-y-[-8px]"
                   onClick={() => setVRM("/AvatarSample_C.vrm")}
+                />
+                <img
+                  src={buildUrl("/demo-D.png")}
+                  alt="demo-D"
+                  className="mx-[1%] w-[22%] cursor-pointer rounded-16  transition-all hover:translate-y-[-8px]"
+                  onClick={() => setVRM("/AvatarSample_D.vrm")}
                 />
               </div>
               <div className="mt-8">
