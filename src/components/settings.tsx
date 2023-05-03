@@ -63,7 +63,7 @@ export const Settings = ({
             </div>
             <input
               className="w-col-span-2 text-ellipsis rounded-8 bg-surface1 px-16 py-8 hover:bg-surface1-hover"
-              type="text"
+              type="password"
               placeholder="sk-..."
               value={openAiKey}
               onChange={onChangeAiKey}

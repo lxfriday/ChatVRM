@@ -76,7 +76,7 @@ export const Introduction = ({ openAiKey, onChangeAiKey }: Props) => {
             {lang.IntroOpenAIAPIKey}
           </div>
           <input
-            type="text"
+            type="password"
             placeholder="sk-..."
             value={openAiKey}
             onChange={handleAiKeyChange}
