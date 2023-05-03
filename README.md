@@ -70,3 +70,4 @@ ChatVRM 使用 Koeiro API 进行响应消息的语音阅读。
 
 - [https://vrm.dev/](https://vrm.dev/)
 - [https://github.com/pixiv/three-vrm](https://github.com/pixiv/three-vrm)
+- [https://vroid.com/studio](https://vroid.com/studio) 创建 VRM 模型
