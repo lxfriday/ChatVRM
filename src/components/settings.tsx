@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { IconButton } from "./iconButton";
 import { TextButton } from "./textButton";
 import { Message } from "@/features/messages/messages";
@@ -12,6 +12,8 @@ import {
 import { Link } from "./link";
 import { setLan } from "@/i18n";
 import { useI18n } from "@/components/I18nProvider";
+import { buildUrl } from "@/utils/buildUrl";
+import { ViewerContext } from "@/features/vrmViewer/viewerContext";
 
 type Props = {
   openAiKey: string;
@@ -38,6 +40,12 @@ export const Settings = ({
   onClickOpenVrmFile,
 }: Props) => {
   const lang = useI18n();
+  const { viewer } = useContext(ViewerContext);
+
+  function setVRM(path: string) {
+    localStorage.setItem("chatvrm_vrm", path);
+    viewer.loadVrm(buildUrl(path));
+  }
   return (
     <div className="absolute z-40 h-full w-full bg-white/80 backdrop-blur ">
       <div className="absolute m-24">
@@ -120,9 +128,31 @@ export const Settings = ({
               {lang.SettingsCharacterModel}
             </div>
             <div className="my-8">
-              <TextButton onClick={onClickOpenVrmFile}>
-                {lang.SettingsCharacterSelectBtn}
-              </TextButton>
+              <div className="flex">
+                <img
+                  src={buildUrl("/demo-A.png")}
+                  alt="demo-A"
+                  className="mx-[1%] w-[30%] cursor-pointer rounded-16  transition-all hover:translate-y-[-8px]"
+                  onClick={() => setVRM("/AvatarSample_A.vrm")}
+                />
+                <img
+                  src={buildUrl("/demo-B.png")}
+                  alt="demo-A"
+                  className="mx-[1%] w-[30%] cursor-pointer rounded-16  transition-all hover:translate-y-[-8px]"
+                  onClick={() => setVRM("/AvatarSample_B.vrm")}
+                />
+                <img
+                  src={buildUrl("/demo-C.png")}
+                  alt="demo-A"
+                  className="mx-[1%] w-[30%] cursor-pointer rounded-16  transition-all hover:translate-y-[-8px]"
+                  onClick={() => setVRM("/AvatarSample_C.vrm")}
+                />
+              </div>
+              <div className="mt-8">
+                <TextButton onClick={onClickOpenVrmFile}>
+                  {lang.SettingsCharacterSelectBtn}
+                </TextButton>
+              </div>
             </div>
           </div>
           <div className="my-40">
@@ -209,7 +239,9 @@ export const Settings = ({
           </div>
           {chatLog.length > 0 && (
             <div className="my-40">
-              <div className="my-16 font-bold typography-20">{lang.SettingsConversationLog}</div>
+              <div className="my-16 font-bold typography-20">
+                {lang.SettingsConversationLog}
+              </div>
               <div className="my-8">
                 {chatLog.map((value, index) => {
                   return (
