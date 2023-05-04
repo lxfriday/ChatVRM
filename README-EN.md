@@ -18,7 +18,7 @@ The various features of ChatVRM mainly use the following technologies:
   - [@pixiv/three-vrm](https://github.com/pixiv/three-vrm)
 
 ![1.png](./imgs/1.png)
-![2.png](./imgs/2.png)
+![2.png](./imgs/en.png)
 
 ## Demo
 
