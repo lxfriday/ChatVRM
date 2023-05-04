@@ -17,6 +17,9 @@ ChatVRM 的各种功能主要使用以下技术：
 - 显示 3D 角色
   - [@pixiv/three-vrm](https://github.com/pixiv/three-vrm)
 
+![1.png](./imgs/1.png)
+![2.png](./imgs/2.png)
+
 ## Demo
 
 该项目已在 GitHub Pages 上发布了演示。

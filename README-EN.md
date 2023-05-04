@@ -17,6 +17,9 @@ The various features of ChatVRM mainly use the following technologies:
 - Displaying 3D characters
   - [@pixiv/three-vrm](https://github.com/pixiv/three-vrm)
 
+![1.png](./imgs/1.png)
+![2.png](./imgs/2.png)
+
 ## Demo
 
 This project has been published on GitHub Pages for demonstration.
