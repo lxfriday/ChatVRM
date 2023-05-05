@@ -13,3 +13,5 @@ export function buildUrl(path: string): string {
 
   return publicRuntimeConfig.root + path;
 }
+
+export const CDNUrl = (p: string) => "https://qiniu1.lxfriday.xyz/common" + p;

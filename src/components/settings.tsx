@@ -12,7 +12,7 @@ import {
 import { Link } from "./link";
 import { setLan } from "@/i18n";
 import { useI18n } from "@/components/I18nProvider";
-import { buildUrl } from "@/utils/buildUrl";
+import { buildUrl, CDNUrl } from "@/utils/buildUrl";
 import { ViewerContext } from "@/features/vrmViewer/viewerContext";
 
 type Props = {
@@ -44,7 +44,7 @@ export const Settings = ({
 
   function setVRM(path: string) {
     localStorage.setItem("chatvrm_vrm", path);
-    viewer.loadVrm(buildUrl(path));
+    viewer.loadVrm(CDNUrl(path));
   }
   return (
     <div className="absolute z-40 h-full w-full bg-white/80 backdrop-blur ">

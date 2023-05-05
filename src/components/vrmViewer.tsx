@@ -1,6 +1,6 @@
 import { useContext, LegacyRef, useEffect, useRef } from "react";
 import { ViewerContext } from "../features/vrmViewer/viewerContext";
-import { buildUrl } from "@/utils/buildUrl";
+import { buildUrl, CDNUrl } from "@/utils/buildUrl";
 
 export default function VrmViewer() {
   const { viewer } = useContext(ViewerContext);
@@ -11,8 +11,8 @@ export default function VrmViewer() {
     if (canvas) {
       viewer.setup(canvas);
 
-      const vrm = localStorage.getItem('chatvrm_vrm') ?? "/AvatarSample_A.vrm"
-      viewer.loadVrm(buildUrl(vrm));
+      const vrm = localStorage.getItem("chatvrm_vrm") ?? "/AvatarSample_A.vrm";
+      viewer.loadVrm(CDNUrl(vrm));
 
       function handleDragOver(event: DragEvent) {
         event.preventDefault();
